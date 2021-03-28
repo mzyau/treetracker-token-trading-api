@@ -63,7 +63,6 @@ trustRouter.get('/',
     const subWallets = await wallet.getSubWallets();
     // get all trust relationships of wallets managed by logged in wallet 
     for(const sw of subWallets){
-      xxxx
       const trustRelationships = await sw.getTrustRelationships(
         req.query.state,
         req.query.type,
